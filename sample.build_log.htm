@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+D:\ownCloud\Lavoro\Didattica\Assembly\ARM\Laboratori\esercitazione 8\sample_led_button_NVIC_timer\sample.uvproj
+Project File Date:  12/13/2018
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling IRQ_button.c...
+linking...
+Program Size: Code=1460 RO-data=236 RW-data=8 ZI-data=608  
+".\sample.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+g IRQ_button.c...
+button_EXINT\IRQ_button.c(8): warning:  #223-D: function "led11_On" declared implicitly
+        led11_On();
+button_EXINT\IRQ_button.c(15): warning:  #223-D: function "led10_On" declared implicitly
+        led10_On();
+button_EXINT\IRQ_button.c(22): warning:  #223-D: function "led10_11_Off" declared implicitly
+        led10_11_Off();
+button_EXINT\IRQ_button.c: 3 warnings, 0 errors
+compiling lib_button.c...
+compiling IRQ_timer.c...
+compiling lib_timer.c...
+linking...
+.\sample.axf: Error: L6218E: Undefined symbol led10_11_Off (referred from irq_button.o).
+.\sample.axf: Error: L6218E: Undefined symbol led10_On (referred from irq_button.o).
+.\sample.axf: Error: L6218E: Undefined symbol led11_On (referred from irq_button.o).
+Not enough information to list image symbols.
+Finished: 1 information, 0 warning and 3 error messages.
+".\sample.axf" - 3 Error(s), 3 Warning(s).
+Target not created
